@@ -18,13 +18,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Quarto Project
-        run: |
-          cd slides
-          quarto render
-
-      - name: Publish to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./slides
+          target: gh-pages
+          path: ./
+          render: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
