@@ -1,0 +1,40 @@
+---
+title: "Prompt Engineering for Developers"
+author: "Sébastien SIME"
+format:
+  revealjs: 
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    footer: "Prompt Engineering for developpers"
+    css: ../custom.css
+    from: markdown+emoji
+---
+
+# What is Prompt Engineering?
+
+- The art and science of designing effective prompts for AI models
+- Crucial for getting the best results from language models
+- Bridges the gap between human intent and AI output
+
+# Why is it Important?
+
+- Improves AI model performance
+- Reduces errors and hallucinations
+- Enhances user experience
+- Saves time and resources
+
+# Key Principles
+
+1. Be specific and clear
+2. Provide context
+3. Use examples (few-shot learning)
+4. Break complex tasks into steps
+5. Iterate and refine
+
+---
+
+# More slides...
+
+Add your remaining slides here.
