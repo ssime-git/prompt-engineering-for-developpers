@@ -375,8 +375,9 @@ Sébastien SIME
 <h1>More slides…</h1>
 <p>Add your remaining slides here.</p>
 <div class="quarto-auto-generated-content">
+<p><img src="DST_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Prompt Engineering for developpers</p>
+<p>Prompt Engineering for developers</p>
 </div>
 </div>
 </section>
@@ -775,6 +776,15 @@ Sébastien SIME
           });
         }
       }
+    });
+    </script>
+    <script>
+    var customArrows = `
+      <div class="custom-arrow left" onclick="Reveal.prev()"></div>
+      <div class="custom-arrow right" onclick="Reveal.next()"></div>
+    `;
+    Reveal.addEventListener('ready', event => {
+      document.body.insertAdjacentHTML('beforeend', customArrows);
     });
     </script>
     
