@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5DC; /* Beige background */
+}
+
+.reveal .slides {
+    background-color: #F5F5DC; /* Beige background for slides */
+}
+
+.reveal .slide-logo {
+    height: 80px !important;
+    width: auto !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    right: 12px;
+    bottom: 12px;
+}
+
+.reveal .footer {
+    font-size: 0.5em;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.reveal .slide-number {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom styling for the summary slide */
+.summary-slide h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.summary-slide ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.summary-slide li {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.summary-slide li::before {
+    content: counter(item);
+    counter-increment: item;
+    background-color: #87CEEB; /* Light blue background for numbers */
+    color: white;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+/* Style for the "SUMMARY" text */
+.summary-slide h2::after {
+    content: "SUMMARY";
+    display: block;
+    font-size: 0.6em;
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    margin: 10px auto;
+    width: fit-content;
+}
