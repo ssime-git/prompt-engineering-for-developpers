@@ -56,6 +56,7 @@ Let's talk about why prompt engineering is important and how it can benefit us.
 
 ## Practice on Be Specific and Clear
 
+{{< include practice/subpart1.qmd >}}
 
 ---
 
