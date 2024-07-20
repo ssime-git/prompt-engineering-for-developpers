@@ -8,7 +8,7 @@ format:
     slide-number: true
     incremental: true
     footer: "Prompt Engineering for developpers"
-    css: ../custom.css
+    css: custom.css
     from: markdown+emoji
 ---
 
