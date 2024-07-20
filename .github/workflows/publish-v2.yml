@@ -23,5 +23,6 @@ jobs:
         with:
           target: gh-pages
           path: ./slides
+          render: true
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
