@@ -22,13 +22,13 @@
 
 /* Chevron pointing left */
 .custom-arrow.left {
-    left: 20px;
+    left: 10px;
     clip-path: polygon(0% 50%, 100% 0%, 100% 100%); /* Chevron pointing left */
 }
 
 /* Chevron pointing right */
 .custom-arrow.right {
-    right: 20px;
+    right: 10px;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%); /* Chevron pointing right */
 }
 
@@ -37,7 +37,7 @@
     background-color: #666666; /* Slightly lighter grey on hover */
 }
 
-.logo-img {
+.logo {
     width: 200px; /* Adjust the width as needed */
     height: 200px; /* Maintain aspect ratio */
 }

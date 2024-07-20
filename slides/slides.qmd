@@ -25,10 +25,15 @@ format:
 ---
 
 # What is Prompt Engineering?
+## A Discipline at the Intersection of Art and Science
 
 - The art and science of designing effective prompts for AI models
 - Crucial for getting the best results from language models
 - Bridges the gap between human intent and AI output
+
+::: aside
+prompt engineering is a discipline that focuses on designing effective prompts for AI models. It bridges the gap between human intent and AI output, allowing us to get the best results from language models.
+:::
 
 # Why is it Important?
 
@@ -37,6 +42,10 @@ format:
 - Enhances user experience
 - Saves time and resources
 
+::: footer
+Let's talk about why prompt engineering is important and how it can benefit us.
+:::
+
 # Key Principles
 
 1. Be specific and clear
@@ -44,6 +53,10 @@ format:
 3. Use examples (few-shot learning)
 4. Break complex tasks into steps
 5. Iterate and refine
+
+## Practice on Be Specific and Clear
+
+{{< include practice/subpart1.qmd >}}
 
 ---
 

@@ -1,0 +1,19 @@
+## subpart 1 : Practice Case
+
+Now let's work a little bit.
+
+::: {.panel-tabset}
+
+### Notebook 1
+
+**Content** for `Tab A`.
+
+```sh
+echo "Hello, world!"
+```
+
+### Notebook 2
+
+Content for `Tab B`
+
+:::
