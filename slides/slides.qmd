@@ -2,14 +2,26 @@
 title: "Prompt Engineering for Developers"
 author: "Sébastien SIME"
 format:
-  revealjs: 
-    theme: simple
+  revealjs:
+    logo: DST_logo.png 
+    theme: default
     transition: slide
     slide-number: true
     incremental: true
-    footer: "Prompt Engineering for developpers"
+    footer: "Prompt Engineering for developers"
     css: custom.css
     from: markdown+emoji
+    include-after-body: 
+      text: |
+        <script>
+        var customArrows = `
+          <div class="custom-arrow left" onclick="Reveal.prev()"></div>
+          <div class="custom-arrow right" onclick="Reveal.next()"></div>
+        `;
+        Reveal.addEventListener('ready', event => {
+          document.body.insertAdjacentHTML('beforeend', customArrows);
+        });
+        </script>
 ---
 
 # What is Prompt Engineering?
