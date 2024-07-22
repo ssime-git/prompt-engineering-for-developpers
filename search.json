@@ -1,23 +1,23 @@
 [
   {
-    "objectID": "index.html#a-discipline-at-the-intersection-of-art-and-science",
-    "href": "index.html#a-discipline-at-the-intersection-of-art-and-science",
-    "title": "Prompt Engineering for Developers",
-    "section": "A Discipline at the Intersection of Art and Science",
-    "text": "A Discipline at the Intersection of Art and Science\n\nThe art and science of designing effective prompts for AI models\nCrucial for getting the best results from language models\nBridges the gap between human intent and AI output\n\n\n\nprompt engineering is a discipline that focuses on designing effective prompts for AI models. It bridges the gap between human intent and AI output, allowing us to get the best results from language models."
+    "objectID": "index.html#spécificité-des-prompts",
+    "href": "index.html#spécificité-des-prompts",
+    "title": "Stratégie de Prompt Engineering",
+    "section": "Spécificité des Prompts",
+    "text": "Spécificité des Prompts\nLa spécificité des prompts fait référence au degré de précision et de détail inclus dans une instruction donnée à un modèle de langage.\nUn prompt spécifique fournit des informations claires et détaillées sur la tâche à accomplir, le format de sortie souhaité, et toute contrainte ou contexte pertinent.\n\n\n\n\n\n\nImportance de la spécificité\n\n\nPlus un prompt est spécifique, plus il est probable que le modèle produise une réponse précise et alignée sur les attentes de l’utilisateur."
   },
   {
-    "objectID": "index.html#practice-on-be-specific-and-clear",
-    "href": "index.html#practice-on-be-specific-and-clear",
-    "title": "Prompt Engineering for Developers",
-    "section": "Practice on Be Specific and Clear",
-    "text": "Practice on Be Specific and Clear"
+    "objectID": "index.html#exemples-de-prompts",
+    "href": "index.html#exemples-de-prompts",
+    "title": "Stratégie de Prompt Engineering",
+    "section": "Exemples de prompts",
+    "text": "Exemples de prompts\nPrenons quelques exemples.\n\nSpécifique Vs non spécifiqueInstruction claire\n\n\n\n\nPrompt peu spécifique\nParlez-moi de la Révolution française.\n\n\n\nPrompt spécifique\nDécrivez en 150 mots les trois principales \ncauses de la Révolution française de 1789, \nen vous concentrant sur les aspects \néconomiques, sociaux et politiques. \nIncluez une date clé pour chaque cause.\n\n\n\nprompt = \"\"\"\nRésumez ce texte en trois phrases, en mettant l'accent sur \nles informations historiques et statistiques.\n\nTexte : La Tour Eiffel, construite pour l'Exposition universelle \nde 1889, est devenue le symbole de Paris. Haute de 324 mètres, \nelle fut le plus haut monument du monde pendant 41 ans. Aujourd'hui, \nelle accueille près de 7 millions de visiteurs par an, faisant \nd'elle le monument payant le plus visité au monde.\n\"\"\""
   },
   {
-    "objectID": "index.html#subpart-1-practice-case",
-    "href": "index.html#subpart-1-practice-case",
-    "title": "Prompt Engineering for Developers",
-    "section": "subpart 1 : Practice Case",
-    "text": "subpart 1 : Practice Case\nNow let’s work a little bit.\n\nNotebook 1Notebook 2\n\n\nContent for Tab A.\necho \"Hello, world!\"\n\n\nContent for Tab B"
+    "objectID": "index.html#exemples",
+    "href": "index.html#exemples",
+    "title": "Stratégie de Prompt Engineering",
+    "section": "Exemples",
+    "text": "Exemples\n\n\nVersion 1\nComment préparer une ratatouille ?\n\nVersion 2\nDonnez-moi une recette de ratatouille.\n\nVersion 3\nQuelles sont les étapes pour cuisiner une bonne ratatouille ?"
   }
 ]
