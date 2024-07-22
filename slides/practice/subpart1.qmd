@@ -1,19 +1,47 @@
-## subpart 1 : Practice Case
-
-Now let's work a little bit.
+Prenons quelques exemples.
 
 ::: {.panel-tabset}
 
-### Notebook 1
+### Spécifique Vs non spécifique
 
-**Content** for `Tab A`.
+:::: {.columns}
 
-```sh
-echo "Hello, world!"
+::: {.column width="45%"}
+#### Prompt peu spécifique
 ```
+Parlez-moi de la Révolution française.
+```
+:::
 
-### Notebook 2
+::: {.column width="5%"}
+:::
 
-Content for `Tab B`
+::: {.column width="45%"}
+#### Prompt spécifique
+```
+Décrivez en 150 mots les trois principales 
+causes de la Révolution française de 1789, 
+en vous concentrant sur les aspects 
+économiques, sociaux et politiques. 
+Incluez une date clé pour chaque cause.
+```
+:::
+
+::::
+
+### Instruction claire
+
+```{.python}
+prompt = """
+Résumez ce texte en trois phrases, en mettant l'accent sur 
+les informations historiques et statistiques.
+
+Texte : La Tour Eiffel, construite pour l'Exposition universelle 
+de 1889, est devenue le symbole de Paris. Haute de 324 mètres, 
+elle fut le plus haut monument du monde pendant 41 ans. Aujourd'hui, 
+elle accueille près de 7 millions de visiteurs par an, faisant 
+d'elle le monument payant le plus visité au monde.
+"""
+```
 
 :::

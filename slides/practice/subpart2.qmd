@@ -1,0 +1,20 @@
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+#### Version 1
+Comment préparer une ratatouille ?
+:::
+
+::: {.column width="30%"}
+#### Version 2
+Donnez-moi une recette de ratatouille.
+:::
+
+::: {.column width="40%"}
+#### Version 3
+Quelles sont les étapes pour cuisiner une bonne ratatouille ?
+:::
+
+::::

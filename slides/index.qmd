@@ -1,9 +1,10 @@
 ---
-title: "Prompt Engineering for Developers"
+title: "Stratégie de Prompt Engineering"
+subtitle: "Une Discipline à l'Intersection de l'Art et de la Science"
 author: "Sébastien SIME"
 format:
   revealjs:
-    logo: DST_logo.png 
+    logo: DST_icon_purple.svg 
     theme: default
     transition: slide
     slide-number: true
@@ -11,55 +12,120 @@ format:
     footer: "Prompt Engineering for developers"
     css: custom.css
     from: markdown+emoji
-    include-after-body: 
-      text: |
-        <script>
-        var customArrows = `
-          <div class="custom-arrow left" onclick="Reveal.prev()"></div>
-          <div class="custom-arrow right" onclick="Reveal.next()"></div>
-        `;
-        Reveal.addEventListener('ready', event => {
-          document.body.insertAdjacentHTML('beforeend', customArrows);
-        });
-        </script>
+    highlight-style: github
 ---
 
-# What is Prompt Engineering?
-## A Discipline at the Intersection of Art and Science
+# Introduction à l'Ingénierie de Prompts
 
-- The art and science of designing effective prompts for AI models
-- Crucial for getting the best results from language models
-- Bridges the gap between human intent and AI output
+* L'ingénierie de prompts est le processus de conception de consignes efficaces pour obtenir les réponses souhaitées des modèles de langage avancés (LLMs). 
 
-::: aside
-prompt engineering is a discipline that focuses on designing effective prompts for AI models. It bridges the gap between human intent and AI output, allowing us to get the best results from language models.
+* Des prompts bien conçus peuvent considérablement améliorer la qualité et la pertinence des résultats du modèle.
+
+# Instructions Claires et Spécifiques
+
+* Donnez des instructions claires et spécifiques sur ce que vous voulez que le modèle fasse. 
+
+* Définissez la tâche, spécifiez les contraintes et décrivez le format souhaité.
+
+## Spécificité des Prompts
+
+La **spécificité** des prompts fait référence au degré de précision et de détail inclus dans une instruction donnée à un modèle de langage. 
+
+Un prompt spécifique fournit des informations claires et détaillées sur la tâche à accomplir, le format de sortie souhaité, et toute contrainte ou contexte pertinent.
+
+::: {.callout-tip}
+## Importance de la spécificité
+Plus un prompt est spécifique, plus il est probable que le modèle produise une réponse précise et alignée sur les attentes de l'utilisateur.
 :::
 
-# Why is it Important?
-
-- Improves AI model performance
-- Reduces errors and hallucinations
-- Enhances user experience
-- Saves time and resources
-
-::: footer
-Let's talk about why prompt engineering is important and how it can benefit us.
-:::
-
-# Key Principles
-
-1. Be specific and clear
-2. Provide context
-3. Use examples (few-shot learning)
-4. Break complex tasks into steps
-5. Iterate and refine
-
-## Practice on Be Specific and Clear
+## Exemples de prompts
 
 {{< include practice/subpart1.qmd >}}
 
----
 
-# More slides...
+# Ajout d'Informations Contextuelles
 
-Add your remaining slides here.
+Fournissez un contexte pertinent pour aider le modèle à mieux comprendre la tâche. Incluez les informations de fond ou les références nécessaires.
+
+```{.python}
+prompt = """
+Répondez à la question en utilisant le guide de dépannage fourni.
+
+Question : Que dois-je faire si le voyant de ma box internet est rouge et clignote rapidement ?
+
+Guide : 
+[Insérez ici les informations de dépannage pertinentes]
+"""
+```
+
+# Utilisation de Préfixes
+
+Ajoutez des préfixes à l'entrée, à la sortie ou aux exemples pour signaler des parties sémantiquement significatives.
+
+- Exemple de préfixe d'entrée : "Français:", "Anglais:"
+- Exemple de préfixe de sortie : "JSON:", "La réponse est:"
+
+# Complétion d'Entrée Partielle
+
+Fournissez une entrée partielle et laissez le modèle la compléter en se basant sur des exemples ou le contexte. 
+
+Cette technique est utile pour guider le modèle à suivre un modèle ou un format spécifique.
+
+```{.python}
+prompt = """
+Créez un plan pour un essai sur la cuisine française.
+
+I. Introduction
+*
+"""
+```
+
+# Décomposition des Prompts Complexes
+
+- Divisez les tâches complexes en composants plus simples.
+
+- Utilisez des techniques comme la décomposition des instructions, le chaînage de prompts et l'agrégation des réponses.
+
+# Expérimentation avec les Paramètres
+
+Ajustez les paramètres du modèle pour affiner les réponses :
+
+| Paramètre | Description |
+|-----------|-------------|
+| Tokens de sortie maximum | Contrôlez la longueur de la réponse |
+| Température | Ajustez le caractère aléatoire (0,2 est un bon point de départ) |
+| Top-K et Top-P | Influencez la sélection des tokens |
+
+# Stratégies d'Itération
+
+- Utilisez différentes formulations pour la même demande
+- Essayez des tâches analogues pour atteindre le même résultat
+- Expérimentez avec l'ordre du contenu du prompt
+
+## Exemples
+{{< include practice/subpart2.qmd >}}
+
+# Meilleures Pratiques et Choses à Éviter
+
+::: {.callout-warning}
+## Attention
+- Ne vous fiez pas aux modèles pour obtenir des informations factuelles
+- Soyez prudent avec les problèmes de mathématiques et de logique
+- Soyez conscient des biais potentiels dans les réponses du modèle
+:::
+
+# Gestion des Réponses de Repli
+
+- Reconnaissez les réponses de repli (par exemple, "Je ne peux pas vous aider avec ça...")
+- Essayez d'augmenter la température si vous rencontrez des réponses de repli
+
+# Exercices Pratiques
+
+1. Concevez des prompts pour diverses tâches (résumé, classification, génération de contenu)
+2. Analysez et améliorez les prompts existants
+3. Comparez les réponses de différentes variantes de prompts
+
+::: {.callout-note}
+## Conseil
+La pratique régulière est essentielle pour maîtriser l'art de l'ingénierie de prompts. Expérimentez avec différentes approches et analysez les résultats pour améliorer vos compétences.
+:::
